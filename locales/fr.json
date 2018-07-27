@@ -1,0 +1,17 @@
+{
+  "jumbotron": {
+    "slogan": "インターネットのためのオープンプラットフォーム",
+    "btn-documentation": "ドキュメンテーション",
+    "btn-github": "GitHubで表示",
+    "btn-discord": "コミュニティ",
+    "btn-get-started": "開始する"
+  },
+  "home": {
+    "title": "Bienvenue",
+    "introduction": "Ceci est un texte d'introduction en FranÃ§ais."
+  },
+  "about": {
+    "title": "Ã propos",
+    "introduction": "Cette page est faite pour vous donner plus d'informations."
+  }
+}

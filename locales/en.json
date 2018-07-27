@@ -1,0 +1,17 @@
+{
+  "jumbotron": {
+    "slogan": "The Open Platform for the Internet of Things",
+    "btn-documentation": "Documentation",
+    "btn-github": "View on GitHub",
+    "btn-discord": "Community",
+    "btn-get-started": "Get Started"
+  },
+  "home": {
+    "title": "Welcome",
+    "introduction": "This is an introduction in English."
+  },
+  "about": {
+    "title": "About",
+    "introduction": "This page is made to give you more informations."
+  }
+}
