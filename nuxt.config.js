@@ -17,6 +17,11 @@ module.exports = {
     middleware: 'vue-i18n'
   },
 
+  /** Common CSS files */
+  css: [
+    {src: 'vuetify/dist/vuetify.min.css'}
+  ],
+
   /** List of plugins */
   plugins: [
     '~plugins/vuetify.js',
@@ -37,6 +42,8 @@ module.exports = {
 
   /** Build configuration */
   build: {
+    extractCSS: true,
+
     /** Vendor libraries */
     vendor: [
       'vuetify',
