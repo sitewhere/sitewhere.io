@@ -7,18 +7,18 @@
     <img class="main-logo" src="~/assets/sitewhere-logo.svg">
     <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg">
     <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
-    <v-btn class="view-docs-btn grey--text" color="white" light
-      @click="openDocumentation">
+    <v-btn class="view-docs-btn grey--text text--darken-1" color="white"
+      light @click="openDocumentation">
       <font-awesome-icon icon="book" size="lg" />
       {{ $t('jumbotron.btn-documentation') }}
     </v-btn>
-    <v-btn class="view-github-btn grey--text" color="white" light
-      @click="openGitHub">
+    <v-btn class="view-github-btn grey--text text--darken-1" color="white"
+      light @click="openGitHub">
       <font-awesome-icon :icon="['fab', 'github']" size="lg" />
       {{ $t('jumbotron.btn-github') }}
     </v-btn>
-    <v-btn class="view-discord-btn grey--text" color="white" light
-      @click="openDiscord">
+    <v-btn class="view-discord-btn grey--text text--darken-1" color="white"
+      light @click="openDiscord">
       <font-awesome-icon :icon="['fab', 'discord']" size="lg" />
       {{ $t('jumbotron.btn-discord') }}
     </v-btn>
