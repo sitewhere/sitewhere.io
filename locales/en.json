@@ -13,5 +13,13 @@
   "about": {
     "title": "About",
     "introduction": "This page is made to give you more informations."
+  },
+  "lotties": {
+    "deployment": {
+      "deploy-in-minutes": "Deploy a SiteWhere Instance in Minutes",
+      "choose-cloud-env": "Choose a Cloud Environment or Deploy On-Premise",
+      "provision-k8s": "Provision a Kubernetes Cluster",
+      "use-helm": "Use Helm to Configure a SiteWhere Instance"
+    }
   }
 }

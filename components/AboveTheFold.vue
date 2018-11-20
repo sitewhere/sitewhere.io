@@ -7,22 +7,19 @@
     <img class="main-logo" src="~/assets/sitewhere-logo.svg">
     <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg">
     <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
-    <v-btn class="view-docs-btn grey--text text--darken-1" color="white"
-      light @click="openDocumentation">
+    <v-btn class="header-btn view-docs-btn" light @click="openDocumentation">
       <font-awesome-icon icon="book" size="lg" />
       {{ $t('jumbotron.btn-documentation') }}
     </v-btn>
-    <v-btn class="view-github-btn grey--text text--darken-1" color="white"
-      light @click="openGitHub">
+    <v-btn class="header-btn view-github-btn" light @click="openGitHub">
       <font-awesome-icon :icon="['fab', 'github']" size="lg" />
       {{ $t('jumbotron.btn-github') }}
     </v-btn>
-    <v-btn class="view-discord-btn grey--text text--darken-1" color="white"
-      light @click="openDiscord">
+    <v-btn class="header-btn view-discord-btn" light @click="openDiscord">
       <font-awesome-icon :icon="['fab', 'discord']" size="lg" />
       {{ $t('jumbotron.btn-discord') }}
     </v-btn>
-    <v-btn class="get-started-btn white--text" color="red" @click="openDiscord">
+    <v-btn class="get-started-btn white--text" @click="openDiscord">
       {{ $t('jumbotron.btn-get-started') }}
     </v-btn>
   </div>
@@ -30,21 +27,20 @@
 
 <script>
 export default {
-  data: () => ({
-  }),
+  data: () => ({}),
 
   methods: {
-    openDocumentation: function (event) {
-      window.open('https://sitewhere.io/docs/en/2.0.RC1/index.html', '_blank');
+    openDocumentation: function(event) {
+      window.open("https://sitewhere.io/docs/en/2.0.RC1/index.html", "_blank");
     },
-    openGitHub: function (event) {
-      window.open('https://github.com/sitewhere/sitewhere', '_blank');
+    openGitHub: function(event) {
+      window.open("https://github.com/sitewhere/sitewhere", "_blank");
     },
-    openDiscord: function (event) {
-      window.open('https://discord.gg/sq7sH7B', '_blank');
+    openDiscord: function(event) {
+      window.open("https://discord.gg/sq7sH7B", "_blank");
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -56,7 +52,7 @@ export default {
 }
 .logo-symbol {
   position: absolute;
-  top: 180px;
+  top: 200px;
   left: 50px;
   height: 280px;
 }
@@ -69,10 +65,11 @@ export default {
 }
 .slogan {
   position: absolute;
-  top: 210px;
+  top: 240px;
   left: 300px;
   width: 500px;
   font-size: 40px;
+  color: #333;
 }
 .top-overlay {
   position: absolute;
@@ -97,30 +94,39 @@ export default {
   margin-left: -5px;
   vertical-align: middle;
 }
+.header-btn {
+  background-color: #fff;
+  opacity: 0.8;
+  top: 20px;
+  width: 190px;
+  color: #666;
+  border-radius: 6px;
+}
+.header-btn:hover {
+  background-color: #fff;
+  opacity: 1;
+  color: #333;
+}
 .view-docs-btn {
   position: absolute;
-  top: 20px;
-  right: 510px;
-  width: 200px;
+  right: 470px;
 }
 .view-github-btn {
   position: absolute;
-  top: 20px;
-  right: 280px;
-  width: 200px;
+  right: 260px;
 }
 .view-discord-btn {
   position: absolute;
-  top: 20px;
   right: 50px;
-  width: 200px;
 }
 .get-started-btn {
   position: absolute;
-  top: 360px;
-  left: 300px;
+  top: 365px;
+  left: 290px;
   width: 220px;
-  height: 40px;
+  height: 50px;
   font-size: 16pt;
+  border-radius: 6px;
+  background-color: #dc0000;
 }
 </style>

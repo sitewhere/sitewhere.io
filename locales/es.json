@@ -1,0 +1,26 @@
+{
+    "jumbotron": {
+      "slogan": "La Plataforma Abierta para el Internet de las Cosas",
+      "btn-documentation": "Documentación",
+      "btn-github": "Ver en GitHub",
+      "btn-discord": "Comunidad",
+      "btn-get-started": "Empezar"
+    },
+    "home": {
+      "title": "Bienvenido",
+      "introduction": "Esta es una introducción en inglés."
+    },
+    "about": {
+      "title": "Acerca de",
+      "introduction": "Esta página está hecha para darle más información."
+    },
+    "lotties": {
+      "deployment": {
+        "deploy-in-minutes": "Implementar una instancia de SiteWhere en minutos",
+        "choose-cloud-env": "Elija un entorno de nube o implemente en las instalaciones",
+        "provision-k8s": "Aprovisionamiento de un grupo de Kubernetes",
+        "use-helm": "Use Helm para configurar una instancia de SiteWhere"
+      }
+    }
+  }
+  

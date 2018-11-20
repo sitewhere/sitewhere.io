@@ -1,17 +1,25 @@
 {
   "jumbotron": {
-    "slogan": "インターネットのためのオープンプラットフォーム",
-    "btn-documentation": "ドキュメンテーション",
-    "btn-github": "GitHubで表示",
-    "btn-discord": "コミュニティ",
-    "btn-get-started": "開始する"
+    "slogan": "La plate-forme ouverte pour l'Internet des objets",
+    "btn-documentation": "Documentation",
+    "btn-github": "Voir sur GitHub",
+    "btn-discord": "Communauté",
+    "btn-get-started": "Commencer"
   },
   "home": {
     "title": "Bienvenue",
-    "introduction": "Ceci est un texte d'introduction en FranÃ§ais."
+    "introduction": "Ceci est une introduction en anglais."
   },
   "about": {
-    "title": "Ã propos",
+    "title": "Sur",
     "introduction": "Cette page est faite pour vous donner plus d'informations."
+  },
+  "lotties": {
+    "deployment": {
+      "deploy-in-minutes": "Déployer une instance de SiteWhere en quelques minutes",
+      "choose-cloud-env": "Choisissez un environnement cloud ou déployez sur site",
+      "provision-k8s": "Provisionner un cluster Kubernetes",
+      "use-helm": "Utiliser Helm pour configurer une instance de SiteWhere"
+    }
   }
 }
