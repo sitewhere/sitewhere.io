@@ -36,6 +36,7 @@ module.exports = {
   generate: {
     routes: [
       '/en',
+      '/es',
       '/fr'
     ]
   },
