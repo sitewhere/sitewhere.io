@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="jumbotron">
-      <above-the-fold></above-the-fold>
-    </div>
-    <div style="margin-top: 80px; margin-bottom: 100px;">
+    <above-the-fold/>
+    <div style="margin-top: 100px; margin-bottom: 100px;">
       <lottie-with-overlay
         ref="lottie"
         :options="defaultOptions"
@@ -49,11 +47,13 @@
         />
       </lottie-with-overlay>
     </div>
+    <page-footer class="page-footer"/>
   </div>
 </template>
 
 <script>
 import AboveTheFold from "~/components/AboveTheFold";
+import PageFooter from "~/components/PageFooter";
 import LottieWithOverlay from "~/components/LottieWithOverlay";
 import TextOverlay from "~/components/TextOverlay";
 import * as Deployment from "~/assets/deployment.json";
@@ -74,6 +74,7 @@ export default {
 
   components: {
     AboveTheFold,
+    PageFooter,
     LottieWithOverlay,
     TextOverlay
   },
@@ -134,7 +135,7 @@ html {
 </style>
 
 <style scoped>
-.jumbotron {
-  min-height: 600px;
+.page-footer {
+  margin-top: 100px;
 }
 </style>
