@@ -8,20 +8,21 @@
     <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg">
     <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
     <v-btn class="header-btn view-docs-btn" light @click="openDocumentation">
-      <font-awesome-icon icon="book" size="lg" />
+      <font-awesome-icon icon="book" size="lg"/>
       {{ $t('jumbotron.btn-documentation') }}
     </v-btn>
     <v-btn class="header-btn view-github-btn" light @click="openGitHub">
-      <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+      <font-awesome-icon :icon="['fab', 'github']" size="lg"/>
       {{ $t('jumbotron.btn-github') }}
     </v-btn>
     <v-btn class="header-btn view-discord-btn" light @click="openDiscord">
-      <font-awesome-icon :icon="['fab', 'discord']" size="lg" />
+      <font-awesome-icon :icon="['fab', 'discord']" size="lg"/>
       {{ $t('jumbotron.btn-discord') }}
     </v-btn>
-    <v-btn class="get-started-btn white--text" @click="openDiscord">
-      {{ $t('jumbotron.btn-get-started') }}
-    </v-btn>
+    <v-btn
+      class="get-started-btn white--text"
+      @click="openDocumentation"
+    >{{ $t('jumbotron.btn-get-started') }}</v-btn>
   </div>
 </template>
 
@@ -31,7 +32,13 @@ export default {
 
   methods: {
     openDocumentation: function(event) {
-      window.open("https://sitewhere.io/docs/en/2.0.RC1/index.html", "_blank");
+      let locale = this.$i18n.locale;
+      if (!locale || "en" === locale) {
+        locale = "";
+      } else {
+        locale = locale + "/";
+      }
+      window.open("https://sitewhere.io/docs/2.0.0/" + locale, "_blank");
     },
     openGitHub: function(event) {
       window.open("https://github.com/sitewhere/sitewhere", "_blank");

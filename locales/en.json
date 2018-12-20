@@ -19,7 +19,9 @@
       "deploy-in-minutes": "Deploy a SiteWhere Instance in Minutes",
       "choose-cloud-env": "Choose a Cloud Environment or Deploy On-Premise",
       "provision-k8s": "Provision a Kubernetes Cluster",
-      "use-helm": "Use Helm to Configure a SiteWhere Instance"
+      "use-helm": "Use Helm to Configure a SiteWhere Instance",
+      "microsvc-launched": "SiteWhere Microservices are Launched in Kubernetes",
+      "microsvc-assemble": "Services Automatically Assemble and Start Processing"
     }
   }
 }

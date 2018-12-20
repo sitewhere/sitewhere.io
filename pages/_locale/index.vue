@@ -3,16 +3,50 @@
     <div class="jumbotron">
       <above-the-fold></above-the-fold>
     </div>
-    <div style="margin-top: 40px;">
-      <lottie-with-overlay ref="lottie" :options="defaultOptions" :duration="18" :height="500" :width="900">
-        <text-overlay :padding="50" :transition="deployment1" :textStyle="textStyle"
-          :text="$t('lotties.deployment.deploy-in-minutes')"/>
-        <text-overlay :padding="50" :transition="deployment2" :textStyle="textStyle"
-          :text="$t('lotties.deployment.choose-cloud-env')"/>
-        <text-overlay :padding="50" :transition="deployment3" :textStyle="textStyle"
-          :text="$t('lotties.deployment.provision-k8s')"/>
-        <text-overlay :padding="50" :transition="deployment4" :textStyle="textStyle"
-          :text="$t('lotties.deployment.use-helm')"/>
+    <div style="margin-top: 80px; margin-bottom: 100px;">
+      <lottie-with-overlay
+        ref="lottie"
+        :options="defaultOptions"
+        :duration="32"
+        :height="500"
+        :width="900"
+      >
+        <text-overlay
+          :padding="topPadding"
+          :transition="deployment1"
+          :textStyle="textStyle"
+          :text="$t('lotties.deployment.deploy-in-minutes')"
+        />
+        <text-overlay
+          :padding="topPadding"
+          :transition="deployment2"
+          :textStyle="textStyle"
+          :text="$t('lotties.deployment.choose-cloud-env')"
+        />
+        <text-overlay
+          :padding="topPadding"
+          :transition="deployment3"
+          :textStyle="textStyle"
+          :text="$t('lotties.deployment.provision-k8s')"
+        />
+        <text-overlay
+          :padding="topPadding"
+          :transition="deployment4"
+          :textStyle="textStyle"
+          :text="$t('lotties.deployment.use-helm')"
+        />
+        <text-overlay
+          :padding="topPadding"
+          :transition="deployment5"
+          :textStyle="textStyle"
+          :text="$t('lotties.deployment.microsvc-launched')"
+        />
+        <text-overlay
+          :padding="30"
+          :transition="deployment6"
+          :textStyle="textStyle"
+          :text="$t('lotties.deployment.microsvc-assemble')"
+        />
       </lottie-with-overlay>
     </div>
   </div>
@@ -32,8 +66,9 @@ export default {
     },
     textStyle: {
       fill: "#333",
-      fontSize: "26px"
+      fontSize: "28px"
     },
+    topPadding: 30,
     animationSpeed: 1
   }),
 
@@ -45,19 +80,27 @@ export default {
 
   methods: {
     deployment1: function(timeline, element) {
-      let tline = this.waitFadeInWaitFadeOut(element, 0.2, 0.3, 2.0, 0.2);
+      let tline = this.waitFadeInWaitFadeOut(element, 0.2, 0.3, 2.4, 0.2);
       timeline.add(tline, 0);
     },
     deployment2: function(timeline, element) {
-      let tline = this.waitFadeInWaitFadeOut(element, 3.0, 0.3, 4.8, 0.2);
+      let tline = this.waitFadeInWaitFadeOut(element, 4.8, 0.3, 3.9, 0.4);
       timeline.add(tline, 0);
     },
     deployment3: function(timeline, element) {
-      let tline = this.waitFadeInWaitFadeOut(element, 8.5, 0.3, 4.0, 0.2);
+      let tline = this.waitFadeInWaitFadeOut(element, 9.5, 0.3, 4.0, 0.2);
       timeline.add(tline, 0);
     },
     deployment4: function(timeline, element) {
-      let tline = this.waitFadeInWaitFadeOut(element, 13.0, 0.3, 4.0, 0.2);
+      let tline = this.waitFadeInWaitFadeOut(element, 15.0, 0.3, 4.0, 0.2);
+      timeline.add(tline, 0);
+    },
+    deployment5: function(timeline, element) {
+      let tline = this.waitFadeInWaitFadeOut(element, 20.0, 0.3, 3.0, 0.2);
+      timeline.add(tline, 0);
+    },
+    deployment6: function(timeline, element) {
+      let tline = this.waitFadeInWaitFadeOut(element, 23.5, 0.3, 7.8, 0.6);
       timeline.add(tline, 0);
     },
     waitFadeInWaitFadeOut: function(element, wait, fadeIn, showFor, fadeOut) {
