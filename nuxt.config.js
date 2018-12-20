@@ -1,44 +1,44 @@
 module.exports = {
   /** Page headers */
   head: {
-    title: 'SiteWhere Community Website',
+    title: "SiteWhere Community Website",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'SiteWhere Community Website' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "google-site-verification",
+        content: "_toH0jMl-zSgM3y_Hqo3Y-ehcIFMyxqwd55Kc462yrM"
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: "SiteWhere Community Website"
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   /** Add middleware components */
   router: {
-    middleware: 'vue-i18n'
+    middleware: "vue-i18n"
   },
 
   /** Common CSS files */
-  css: [
-    {src: 'vuetify/dist/vuetify.min.css'}
-  ],
+  css: [{ src: "vuetify/dist/vuetify.min.css" }],
 
   /** List of plugins */
   plugins: [
-    '~plugins/vuetify.js',
-    '~plugins/vue-i18n.js',
-    '~plugins/fontawesome.js'
+    "~plugins/vuetify.js",
+    "~plugins/vue-i18n.js",
+    "~plugins/fontawesome.js"
   ],
 
   /** Progress bar color */
-  loading: { color: '#3B8070' },
+  loading: { color: "#3B8070" },
 
   /** List of routes to generate */
   generate: {
-    routes: [
-      '/en',
-      '/es',
-      '/fr'
-    ]
+    routes: ["/en", "/es", "/fr"]
   },
 
   /** Build configuration */
@@ -47,24 +47,24 @@ module.exports = {
 
     /** Vendor libraries */
     vendor: [
-      'vuetify',
-      'vue-i18n',
-      '@fortawesome/vue-fontawesome',
-      '@fortawesome/fontawesome-svg-core',
-      '@fortawesome/free-brands-svg-icons',
-      '@fortawesome/free-solid-svg-icons'
+      "vuetify",
+      "vue-i18n",
+      "@fortawesome/vue-fontawesome",
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-brands-svg-icons",
+      "@fortawesome/free-solid-svg-icons"
     ],
 
     /** Run ESLint */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
-          enforce: 'pre',
+          enforce: "pre",
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          loader: "eslint-loader",
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   }
-}
+};
