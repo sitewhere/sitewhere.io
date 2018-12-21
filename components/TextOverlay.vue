@@ -45,7 +45,6 @@ export default {
     }
 
     if (this.transition) {
-      console.log(lottie);
       this.transition(lottie.timeline, this.$refs.textElement);
     }
   },

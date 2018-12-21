@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app>
     <above-the-fold/>
     <div style="margin-top: 100px; margin-bottom: 100px;">
       <lottie-with-overlay
@@ -48,7 +48,7 @@
       </lottie-with-overlay>
     </div>
     <page-footer class="page-footer"/>
-  </div>
+  </v-app>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template>
   <div :style="style">
     <div class="svg-overlay" ref="lottieContainer"/>
-    <svg :height="height" :width="width" class="svg-overlay">
-      <slot/>
+    <svg v-if="overlaysVisible" :height="height" :width="width" class="svg-overlay">
+      <slot></slot>
     </svg>
   </div>
 </template>
@@ -27,6 +27,7 @@ export default {
 
   data() {
     return {
+      overlaysVisible: false,
       animation: null,
       timeline: new TimelineMax({}),
       style: {
@@ -55,6 +56,9 @@ export default {
         autoplay: false,
         animationData: this.options.animationData,
         rendererSettings: this.options.rendererSettings
+      });
+      anim.addEventListener("DOMLoaded", function() {
+        component.$data.overlaysVisible = true;
       });
       this.$data.animation = anim;
     },
