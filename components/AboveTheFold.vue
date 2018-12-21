@@ -96,7 +96,7 @@ export default {
     onLanguageUpdated: function(language) {
       this.$data.language = language;
       if (language.locale !== this.$i18n.locale) {
-        document.location.pathname = "/" + language.locale + "/";
+        document.location.pathname = "/" + language.docsLocale + "/";
       }
     }
   }
