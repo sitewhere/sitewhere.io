@@ -24,7 +24,7 @@ module.exports = {
   },
 
   /** Common CSS files */
-  css: [{ src: "vuetify/dist/vuetify.min.css" }],
+  css: ["vuetify/dist/vuetify.min.css", "~/styles/override.css"],
 
   /** List of plugins */
   plugins: [
