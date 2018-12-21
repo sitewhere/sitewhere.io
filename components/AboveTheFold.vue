@@ -82,8 +82,8 @@ export default {
     openDocumentation: function(event) {
       let suffix = "";
       let language = this.$data.language;
-      if (language && "en" != language.locale) {
-        suffix = language.locale + "/";
+      if (language && "en" != language.docsLocale) {
+        suffix = language.docsLocale + "/";
       }
       window.open("https://sitewhere.io/docs/2.0.0/" + suffix, "_blank");
     },
@@ -96,7 +96,7 @@ export default {
     onLanguageUpdated: function(language) {
       this.$data.language = language;
       if (language.locale !== this.$i18n.locale) {
-        document.location.pathname = "/" + language.docsLocale + "/";
+        document.location.pathname = "/" + language.locale + "/";
       }
     }
   }

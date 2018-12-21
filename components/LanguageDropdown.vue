@@ -43,7 +43,7 @@ export default {
 
   computed: {
     currentFlag: function() {
-      let current = this.$data.selected ? this.$data.selected : english;
+      let current = this.$data.selected ? this.$data.selected : languages[0];
       return this.flagFor(current);
     }
   },
