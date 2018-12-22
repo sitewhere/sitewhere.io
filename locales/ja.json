@@ -1,0 +1,27 @@
+{
+  "jumbotron": {
+    "slogan": "モノのインターネットのためのオープンプラットフォーム™",
+    "btn-documentation": "ドキュメンテーション",
+    "btn-github": "GitHubで見る",
+    "btn-discord": "コミュニティ",
+    "btn-get-started": "はじめに"
+  },
+  "home": {
+    "title": "ようこそ",
+    "introduction": "これは英語の紹介です。"
+  },
+  "about": {
+    "title": "約",
+    "introduction": "このページはあなたにもっと多くの情報を与えるために作られています。"
+  },
+  "lotties": {
+    "deployment": {
+      "deploy-in-minutes": "SiteWhereインスタンスを数分でデプロイする",
+      "choose-cloud-env": "クラウド環境を選択するかオンプレミスで展開する",
+      "provision-k8s": "Kubernetesクラスタをプロビジョニングする",
+      "use-helm": "Helmを使用してSiteWhereインスタンスを設定する",
+      "microsvc-launched": "SiteWhereマイクロサービスがKubernetesで発売",
+      "microsvc-assemble": "サービスが自動的にアセンブルして処理を開始"
+    }
+  }
+}

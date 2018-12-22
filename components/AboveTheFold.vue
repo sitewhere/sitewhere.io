@@ -66,9 +66,21 @@ export default {
         docsLocale: "es"
       },
       {
+        locale: "cn",
+        flag: "flag-icon-cn",
+        name: "简体中文",
+        docsLocale: "en"
+      },
+      {
+        locale: "ja",
+        flag: "flag-icon-jp",
+        name: "日本語",
+        docsLocale: "en"
+      },
+      {
         locale: "fr",
         flag: "flag-icon-fr",
-        name: "French",
+        name: "Français",
         docsLocale: "en"
       }
     ]

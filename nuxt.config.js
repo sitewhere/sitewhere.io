@@ -38,7 +38,7 @@ module.exports = {
 
   /** List of routes to generate */
   generate: {
-    routes: ["/en", "/es", "/fr"]
+    routes: ["/en", "/es", "/cn", "/ja", "/fr"]
   },
 
   /** Build configuration */

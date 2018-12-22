@@ -1,0 +1,27 @@
+{
+  "jumbotron": {
+    "slogan": "物联网开放平台",
+    "btn-documentation": "文档",
+    "btn-github": "在GitHub上查看",
+    "btn-discord": "社区",
+    "btn-get-started": "入门"
+  },
+  "home": {
+    "title": "欢迎",
+    "introduction": "这是英文介绍"
+  },
+  "about": {
+    "title": "关于",
+    "introduction": "此页面旨在为您提供更多信息"
+  },
+  "lotties": {
+    "deployment": {
+      "deploy-in-minutes": "在几分钟内部署SiteWhere实例",
+      "choose-cloud-env": "选择云环境或部署内部部署",
+      "provision-k8s": "提供Kubernetes集群",
+      "use-helm": "使用Helm配置SiteWhere实例",
+      "microsvc-launched": "SiteWhere微服务在Kubernetes推出",
+      "microsvc-assemble": "服务自动组装和开始处理"
+    }
+  }
+}

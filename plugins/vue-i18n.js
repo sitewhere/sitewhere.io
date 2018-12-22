@@ -13,6 +13,8 @@ export default ({ app, store }) => {
     messages: {
       en: require("~/locales/en.json"),
       es: require("~/locales/es.json"),
+      cn: require("~/locales/cn.json"),
+      ja: require("~/locales/ja.json"),
       fr: require("~/locales/fr.json")
     }
   });
