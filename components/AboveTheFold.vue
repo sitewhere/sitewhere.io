@@ -1,51 +1,98 @@
 <template>
   <div class="top-content">
-    <img class="top-dark-curve" src="~/assets/top-dark-curve.svg">
-    <img class="top-under-curve" src="~/assets/top-under-curve.svg">
-    <img class="facets" src="/facets.jpg">
-    <img class="top-overlay" src="~/assets/top-overlay.svg">
-    <img class="main-logo" src="~/assets/sitewhere-logo.svg">
-    <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg">
-    <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
-    <v-btn
-      color="white"
-      class="header-btn view-docs-btn elevation-5"
-      light
-      @click="openDocumentation"
-    >
-      <i class="fa fa-book"></i>
-      &nbsp;
-      {{ $t('jumbotron.btn-documentation') }}
-    </v-btn>
-    <v-btn color="white" class="header-btn view-github-btn elevation-5" light @click="openGitHub">
-      <i class="fab fa-github"></i>
-      &nbsp;
-      {{ $t('jumbotron.btn-github') }}
-    </v-btn>
-    <v-btn color="white" class="header-btn view-discord-btn elevation-5" light @click="openDiscord">
-      <i class="fab fa-discord"></i>
-      &nbsp;
-      {{ $t('jumbotron.btn-discord') }}
-    </v-btn>
-    <v-btn
-      color="red darken-1 white--text"
-      class="get-started-btn"
-      @click="openDocumentation"
-    >{{ $t('jumbotron.btn-get-started') }}</v-btn>
-    <v-btn fab small color="white" class="icon-btn view-docs-btn" light @click="openDocumentation">
-      <i class="fa fa-book"></i>
-    </v-btn>
-    <v-btn fab small color="white" class="icon-btn view-github-btn" light @click="openGitHub">
-      <i class="fab fa-github"></i>
-    </v-btn>
-    <v-btn fab small color="white" class="icon-btn view-discord-btn" light @click="openDiscord">
-      <i class="fab fa-discord"></i>
-    </v-btn>
-    <language-dropdown
-      class="language-dd"
-      :languages="languages"
-      @languageUpdated="onLanguageUpdated"
-    />
+    <img class="top-dark-curve hidden-sm-and-down" src="~/assets/top-dark-curve.svg">
+    <img class="top-under-curve hidden-sm-and-down" src="~/assets/top-under-curve.svg">
+    <img class="facets hidden-sm-and-down" src="/facets.jpg">
+    <img class="top-overlay hidden-sm-and-down" src="~/assets/top-overlay.svg">
+    <v-toolbar app flat scroll-off-screen :scroll-threshold="0" height="70" color="transparent">
+      <img class="top-logo" src="~/assets/sitewhere-logo.svg">
+      <v-spacer/>
+      <div class="hidden-sm-and-down">
+        <v-btn class="header-button" color="white" @click="openDocumentation">
+          <i class="fa fa-book"></i>
+          &nbsp;
+          {{ $t('jumbotron.btn-documentation') }}
+        </v-btn>
+        <v-btn class="header-button" color="white" @click="openGitHub">
+          <i class="fab fa-github"></i>
+          &nbsp;
+          {{ $t('jumbotron.btn-github') }}
+        </v-btn>
+        <v-btn class="header-button" color="white" @click="openDiscord">
+          <i class="fab fa-discord"></i>
+          &nbsp;
+          {{ $t('jumbotron.btn-discord') }}
+        </v-btn>
+      </div>
+      <v-menu class="hidden-md-and-up" left bottom offset-y>
+        <v-btn flat slot="activator" class="mt-4 pa-0">
+          <i class="fa fa-2x fa-bars"></i>
+        </v-btn>
+        <v-list dense>
+          <v-list-tile @click="openDocumentation">
+            <v-list-tile-content>
+              <v-list-tile-title>
+                <i class="fa fa-book"></i>
+                &nbsp;
+                {{ $t('jumbotron.btn-documentation') }}
+              </v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile @click="openGitHub">
+            <v-list-tile-content>
+              <v-list-tile-title>
+                <i class="fab fa-github"></i>
+                &nbsp;
+                {{ $t('jumbotron.btn-github') }}
+              </v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile @click="openDiscord">
+            <v-list-tile-content>
+              <v-list-tile-title>
+                <i class="fab fa-discord"></i>
+                &nbsp;
+                {{ $t('jumbotron.btn-discord') }}
+              </v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+      <language-dropdown
+        class="lang-button"
+        :languages="languages"
+        @languageUpdated="onLanguageUpdated"
+      />
+    </v-toolbar>
+    <v-content>
+      <v-layout row>
+        <v-flex xs9>
+          <div style="position: relative; margin-top: 120px;" class="hidden-sm-and-down">
+            <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg">
+            <div class="blurb">
+              <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
+              <p class="short-desc">{{ $t('jumbotron.description') }}</p>
+              <v-btn
+                color="red darken-1 white--text"
+                class="get-started-btn ma-0 mt-1"
+                @click="openDocumentation"
+              >{{ $t('jumbotron.btn-get-started') }}</v-btn>
+            </div>
+          </div>
+        </v-flex>
+        <v-flex xs3></v-flex>
+      </v-layout>
+      <div class="hidden-md-and-up text-xs-center pa-4" style="margin-top: 50px;">
+        <img src="~/assets/sitewhere-symbol.svg" style="max-width: 300px;">
+        <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
+        <p class="short-desc">{{ $t('jumbotron.description') }}</p>
+        <v-btn
+          color="red darken-1 white--text"
+          class="get-started-btn"
+          @click="openDocumentation"
+        >{{ $t('jumbotron.btn-get-started') }}</v-btn>
+      </div>
+    </v-content>
   </div>
 </template>
 
@@ -122,133 +169,72 @@ export default {
 .top-content {
   min-height: 620px;
 }
-.main-logo {
-  position: absolute;
-  top: 20px;
-  left: 30px;
+.top-logo {
   height: 60px;
+  margin-top: 7px;
+}
+.header-button {
+  height: 35px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+.lang-button {
+  height: 40px;
+  margin-top: 15px;
 }
 .logo-symbol {
   position: absolute;
-  top: 200px;
-  left: 50px;
-  height: 280px;
+  top: 0;
+  left: 0;
+  width: 280px;
+}
+.blurb {
+  position: absolute;
+  top: 0;
+  left: 260px;
+  right: 0px;
 }
 .slogan {
-  position: absolute;
-  top: 240px;
-  left: 300px;
-  width: 500px;
   font-size: 40px;
   color: #333;
+  line-height: 1.3em;
 }
-.svg-inline--fa {
-  margin-right: 7px;
-  margin-left: -5px;
-  vertical-align: middle;
+.short-desc {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.3em;
+  margin-top: 15px;
 }
 .get-started-btn {
-  position: absolute;
-  top: 365px;
-  left: 290px;
   width: 220px;
   height: 50px;
   font-size: 16pt;
   border-radius: 6px;
 }
-@media screen and (max-width: 900px) {
-  .facets {
-    display: none;
-  }
-  .top-overlay {
-    display: none;
-  }
-  .top-dark-curve {
-    display: none;
-  }
-  .top-under-curve {
-    display: none;
-  }
+.facets {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 800px;
+  opacity: 0.4;
 }
-@media screen and (min-width: 900px) {
-  .facets {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 800px;
-    opacity: 0.4;
-  }
-  .top-overlay {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 600px;
-  }
-  .top-dark-curve {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 600px;
-  }
-  .top-under-curve {
-    position: absolute;
-    top: 599px;
-    width: 100%;
-    height: 200px;
-  }
+.top-overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 600px;
 }
-@media screen and (min-width: 1024px) {
-  .icon-btn {
-    display: none;
-  }
-  .header-btn {
-    top: 20px;
-    width: 190px;
-    color: #666;
-    border-radius: 6px;
-  }
-  .view-docs-btn {
-    position: absolute;
-    right: 480px;
-  }
-  .view-github-btn {
-    position: absolute;
-    right: 280px;
-  }
-  .view-discord-btn {
-    position: absolute;
-    right: 80px;
-  }
-  .language-dd {
-    position: absolute;
-    top: 18px;
-    right: 15px;
-  }
+.top-dark-curve {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 600px;
 }
-@media screen and (max-width: 1024px) {
-  .header-btn {
-    display: none;
-  }
-  .icon-btn {
-    top: 15px;
-    color: #666;
-  }
-  .view-docs-btn {
-    position: absolute;
-    right: 180px;
-  }
-  .view-github-btn {
-    position: absolute;
-    right: 130px;
-  }
-  .view-discord-btn {
-    position: absolute;
-    right: 80px;
-  }
-  .language-dd {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
+.top-under-curve {
+  position: absolute;
+  top: 599px;
+  width: 100%;
+  height: 200px;
 }
 </style>

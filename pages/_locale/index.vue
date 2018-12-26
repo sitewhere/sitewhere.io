@@ -2,50 +2,7 @@
   <v-app>
     <above-the-fold/>
     <div style="margin-top: 100px; margin-bottom: 100px;">
-      <lottie-with-overlay
-        ref="lottie"
-        :options="defaultOptions"
-        :duration="32"
-        :height="500"
-        :width="900"
-      >
-        <text-overlay
-          :padding="topPadding"
-          :transition="deployment1"
-          :textStyle="textStyle"
-          :text="$t('lotties.deployment.deploy-in-minutes')"
-        />
-        <text-overlay
-          :padding="topPadding"
-          :transition="deployment2"
-          :textStyle="textStyle"
-          :text="$t('lotties.deployment.choose-cloud-env')"
-        />
-        <text-overlay
-          :padding="topPadding"
-          :transition="deployment3"
-          :textStyle="textStyle"
-          :text="$t('lotties.deployment.provision-k8s')"
-        />
-        <text-overlay
-          :padding="topPadding"
-          :transition="deployment4"
-          :textStyle="textStyle"
-          :text="$t('lotties.deployment.use-helm')"
-        />
-        <text-overlay
-          :padding="topPadding"
-          :transition="deployment5"
-          :textStyle="textStyle"
-          :text="$t('lotties.deployment.microsvc-launched')"
-        />
-        <text-overlay
-          :padding="30"
-          :transition="deployment6"
-          :textStyle="textStyle"
-          :text="$t('lotties.deployment.microsvc-assemble')"
-        />
-      </lottie-with-overlay>
+      <deployment-animation class="hidden-sm-and-down" :width="900" :height="500"/>
     </div>
     <page-footer class="page-footer"/>
   </v-app>
@@ -53,6 +10,7 @@
 
 <script>
 import AboveTheFold from "~/components/AboveTheFold";
+import DeploymentAnimation from "~/components/DeploymentAnimation";
 import PageFooter from "~/components/PageFooter";
 import LottieWithOverlay from "~/components/LottieWithOverlay";
 import TextOverlay from "~/components/TextOverlay";
@@ -74,6 +32,7 @@ export default {
 
   components: {
     AboveTheFold,
+    DeploymentAnimation,
     PageFooter,
     LottieWithOverlay,
     TextOverlay

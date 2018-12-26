@@ -1,6 +1,7 @@
 {
   "jumbotron": {
     "slogan": "La plate-forme ouverte pour l'Internet des objets",
+    "description": "SiteWhere est une plate-forme d’activation d’applications d’applications open-source à la pointe industrielle pour l’Internet des objets. Il fournit une infrastructure basée sur un microservice multi-locataires qui inclut la plupart des fonctionnalités nécessaires à la création et au déploiement d'applications IoT.",
     "btn-documentation": "Documentation",
     "btn-github": "Voir sur GitHub",
     "btn-discord": "Communauté",
