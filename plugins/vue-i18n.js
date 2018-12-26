@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueI18n from "vue-i18n";
-import "roboto-fontface/css/roboto/roboto-fontface.css";
 
 Vue.use(VueI18n);
 

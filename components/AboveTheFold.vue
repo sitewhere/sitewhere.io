@@ -13,15 +13,18 @@
       light
       @click="openDocumentation"
     >
-      <font-awesome-icon icon="book" size="lg"/>
+      <i class="fa fa-book"></i>
+      &nbsp;
       {{ $t('jumbotron.btn-documentation') }}
     </v-btn>
     <v-btn color="white" class="header-btn view-github-btn elevation-5" light @click="openGitHub">
-      <font-awesome-icon :icon="['fab', 'github']" size="lg"/>
+      <i class="fab fa-github"></i>
+      &nbsp;
       {{ $t('jumbotron.btn-github') }}
     </v-btn>
     <v-btn color="white" class="header-btn view-discord-btn elevation-5" light @click="openDiscord">
-      <font-awesome-icon :icon="['fab', 'discord']" size="lg"/>
+      <i class="fab fa-discord"></i>
+      &nbsp;
       {{ $t('jumbotron.btn-discord') }}
     </v-btn>
     <v-btn
@@ -30,13 +33,13 @@
       @click="openDocumentation"
     >{{ $t('jumbotron.btn-get-started') }}</v-btn>
     <v-btn fab small color="white" class="icon-btn view-docs-btn" light @click="openDocumentation">
-      <font-awesome-icon style="margin-left: 5px;" icon="book" size="lg"/>
+      <i class="fa fa-book"></i>
     </v-btn>
     <v-btn fab small color="white" class="icon-btn view-github-btn" light @click="openGitHub">
-      <font-awesome-icon style="margin-left: 6px;" :icon="['fab', 'github']" size="lg"/>
+      <i class="fab fa-github"></i>
     </v-btn>
     <v-btn fab small color="white" class="icon-btn view-discord-btn" light @click="openDiscord">
-      <font-awesome-icon style="margin-left: 6px;" :icon="['fab', 'discord']" size="lg"/>
+      <i class="fab fa-discord"></i>
     </v-btn>
     <language-dropdown
       class="language-dd"

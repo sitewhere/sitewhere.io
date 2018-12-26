@@ -27,11 +27,7 @@ module.exports = {
   css: ["vuetify/dist/vuetify.min.css", "~/styles/override.css"],
 
   /** List of plugins */
-  plugins: [
-    "~plugins/vuetify.js",
-    "~plugins/vue-i18n.js",
-    "~plugins/fontawesome.js"
-  ],
+  plugins: ["~plugins/vuetify.js", "~plugins/vue-i18n.js"],
 
   /** Progress bar color */
   loading: { color: "#3B8070" },
@@ -46,14 +42,7 @@ module.exports = {
     extractCSS: true,
 
     /** Vendor libraries */
-    vendor: [
-      "vuetify",
-      "vue-i18n",
-      "@fortawesome/vue-fontawesome",
-      "@fortawesome/fontawesome-svg-core",
-      "@fortawesome/free-brands-svg-icons",
-      "@fortawesome/free-solid-svg-icons"
-    ],
+    vendor: ["vuetify", "vue-i18n"],
 
     /** Run ESLint */
     extend(config, { isDev, isClient }) {
