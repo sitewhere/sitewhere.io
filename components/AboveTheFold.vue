@@ -59,7 +59,7 @@
         </v-list>
       </v-menu>
       <language-dropdown
-        class="lang-button"
+        class="lang-button hidden-sm-and-down"
         :languages="languages"
         @languageUpdated="onLanguageUpdated"
       />
