@@ -1,7 +1,7 @@
 module.exports = {
   /** Page headers */
   head: {
-    title: "SiteWhere Community Website",
+    title: "SiteWhere Open Source Internet of Things Platform",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -12,7 +12,8 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: "SiteWhere Community Website"
+        content:
+          "SiteWhere is an industrial-strength open source application enablement platform for the Internet of Things (IoT). It provides a multi-tenant microservice-based infrastructure built on Kubernetes."
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
@@ -27,7 +28,11 @@ module.exports = {
   css: ["vuetify/dist/vuetify.min.css", "~/styles/override.css"],
 
   /** List of plugins */
-  plugins: ["~plugins/vuetify.js", "~plugins/vue-i18n.js"],
+  plugins: [
+    { src: "~plugins/ga.js", ssr: false },
+    "~plugins/vuetify.js",
+    "~plugins/vue-i18n.js"
+  ],
 
   /** Progress bar color */
   loading: { color: "#3B8070" },
