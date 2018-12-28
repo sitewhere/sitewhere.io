@@ -1,0 +1,28 @@
+{
+  "jumbotron": {
+    "slogan": "Nền tảng mở cho Internet of Things",
+    "description": "SiteWhere là một nền tảng hỗ trợ ứng dụng nguồn mở sức mạnh công nghiệp cho Internet vạn vật (IoT). Nó cung cấp một cơ sở hạ tầng dựa trên microservice nhiều người thuê bao gồm hầu hết các tính năng cần thiết để xây dựng và triển khai các ứng dụng IoT.",
+    "btn-documentation": "Tài liệu",
+    "btn-github": "Xem trên GitHub",
+    "btn-discord": "cộng đồng",
+    "btn-get-started": "Bắt đầu"
+  },
+  "home": {
+    "title": "Chào mừng bạn",
+    "introduction": "Đây là một giới thiệu bằng tiếng Anh."
+  },
+  "about": {
+    "title": "Trong khoảng",
+    "introduction": "Trang này được thực hiện để cung cấp cho bạn thêm thông tin."
+  },
+  "lotties": {
+    "deployment": {
+      "deploy-in-minutes": "Triển khai một trang webWhere Instance trong vài phút",
+      "choose-cloud-env": "Chọn môi trường đám mây hoặc triển khai tại chỗ",
+      "provision-k8s": "Cung cấp một cụm Kubernetes",
+      "use-helm": "Sử dụng Helm để cấu hình sơ đồ trang web",
+      "microsvc-launched": "SiteWhere microservice được ra mắt trong Kubernetes",
+      "microsvc-assemble": "Dịch vụ tự động lắp ráp và bắt đầu xử lý"
+    }
+  }
+}

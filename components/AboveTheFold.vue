@@ -128,6 +128,12 @@ export default {
         docsLocale: "en"
       },
       {
+        locale: "vn",
+        flag: "flag-icon-vn",
+        name: "Tiếng Việt",
+        docsLocale: "en"
+      },
+      {
         locale: "fr",
         flag: "flag-icon-fr",
         name: "Français",
