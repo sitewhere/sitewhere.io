@@ -80,7 +80,7 @@
                         width: 100%;
                       }
                       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                     </style>
                     <div id="mc_embed_signup">
                       <form
@@ -114,9 +114,9 @@
                           </div>
                           <div class="clear">
                             <v-btn
-                              small
-                              class="red darken-2 white--text"
-                              style="margin-top: 2px;"
+                              color="#dc0000"
+                              class="white--text"
+                              style="margin-top: -1px;"
                               type="submit"
                               name="subscribe"
                               id="mc-embedded-subscribe"

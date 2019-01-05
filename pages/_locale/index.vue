@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <above-the-fold/>
-    <div style="margin-top: 100px; margin-bottom: 100px;">
-      <deployment-animation class="hidden-sm-and-down" :width="900" :height="500"/>
+    <above-the-fold style="margin-bottom: 30px;"/>
+    <div class="hidden-sm-and-down">
+      <deployment-animation :width="900" :height="500"/>
     </div>
     <page-footer class="page-footer"/>
   </v-app>

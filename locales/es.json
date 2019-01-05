@@ -8,8 +8,8 @@
     "btn-get-started": "Empezar"
   },
   "home": {
-    "title": "Bienvenido",
-    "introduction": "Esta es una introducción en inglés."
+    "deployment-title": "Implementar en cualquier lugar. Escala todo.",
+    "deployment-content": "La infraestructura y los microservicios de SiteWhere se implementan en Kubernetes, lo que permite la implementación en las instalaciones o casi cualquier proveedor de la nube. Las configuraciones altamente disponibles de Apache Kafka, Zookeeper y Hashicorp Consul proporcionan infraestructura. Cada microservicio se escala independientemente y se integra automáticamente."
   },
   "about": {
     "title": "Acerca de",

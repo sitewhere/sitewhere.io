@@ -8,8 +8,8 @@
     "btn-get-started": "入门"
   },
   "home": {
-    "title": "欢迎",
-    "introduction": "这是英文介绍"
+    "deployment-title": "随处部署。扩展一切",
+    "deployment-content": "SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和Hashicorp Consul的高可用配置提供基础设施。每个微服务独立扩展并自动集成。"
   },
   "about": {
     "title": "关于",

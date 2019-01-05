@@ -8,17 +8,41 @@
       <img class="top-logo" src="~/assets/sitewhere-logo.svg">
       <v-spacer/>
       <div class="hidden-sm-and-down">
-        <v-btn class="header-button" color="white" @click="openDocumentation">
+        <v-btn
+          outline
+          light
+          class="header-button elevation-2"
+          style="background-color: #fff!important;"
+          color="#555"
+          :href="docsLocation"
+          target="_blank"
+        >
           <i class="fa fa-book"></i>
           &nbsp;
           {{ $t('jumbotron.btn-documentation') }}
         </v-btn>
-        <v-btn class="header-button" color="white" @click="openGitHub">
+        <v-btn
+          outline
+          light
+          class="header-button elevation-2"
+          style="background-color: #fff!important;"
+          color="#555"
+          href="https://github.com/sitewhere/sitewhere"
+          target="_blank"
+        >
           <i class="fab fa-github"></i>
           &nbsp;
           {{ $t('jumbotron.btn-github') }}
         </v-btn>
-        <v-btn class="header-button" color="white" @click="openDiscord">
+        <v-btn
+          outline
+          light
+          class="header-button elevation-2"
+          style="background-color: #fff!important;"
+          color="#555"
+          href="https://discord.gg/sq7sH7B"
+          target="_blank"
+        >
           <i class="fab fa-discord"></i>
           &nbsp;
           {{ $t('jumbotron.btn-discord') }}
@@ -73,8 +97,8 @@
               <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
               <p class="short-desc">{{ $t('jumbotron.description') }}</p>
               <v-btn
-                color="red darken-1 white--text"
-                class="get-started-btn ma-0 mt-1"
+                color="#dc0000"
+                class="get-started-btn ma-0 mt-1 white--text"
                 @click="openDocumentation"
               >{{ $t('jumbotron.btn-get-started') }}</v-btn>
             </div>
@@ -91,6 +115,10 @@
           class="get-started-btn"
           @click="openDocumentation"
         >{{ $t('jumbotron.btn-get-started') }}</v-btn>
+      </div>
+      <div class="deploy-section">
+        <h1>{{ $t('home.deployment-title') }}</h1>
+        <p>{{ $t('home.deployment-content') }}</p>
       </div>
     </v-content>
   </div>
@@ -146,6 +174,17 @@ export default {
     LanguageDropdown
   },
 
+  computed: {
+    docsLocation: function() {
+      let suffix = "";
+      let language = this.$data.language;
+      if (language && "en" != language.docsLocale) {
+        suffix = language.docsLocale + "/";
+      }
+      return "https://sitewhere.io/docs/2.0.0/" + suffix;
+    }
+  },
+
   methods: {
     openDocumentation: function(event) {
       let suffix = "";
@@ -182,8 +221,8 @@ export default {
 .header-button {
   height: 35px;
   margin-right: 10px;
-  margin-top: 20px;
-  border-radius: 4px;
+  margin-top: 35px;
+  color: #333;
 }
 .lang-button {
   height: 40px;
@@ -202,7 +241,7 @@ export default {
   right: 0px;
 }
 .slogan {
-  font-size: 40px;
+  font-size: 35px;
   color: #333;
   line-height: 1.3em;
 }
@@ -242,5 +281,19 @@ export default {
   top: 599px;
   width: 100%;
   height: 200px;
+}
+.deploy-section {
+  margin-top: 525px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+}
+.deploy-section p {
+  font-size: 18px;
+  margin-top: 15px;
 }
 </style>

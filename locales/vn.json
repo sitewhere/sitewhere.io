@@ -8,8 +8,8 @@
     "btn-get-started": "Bắt đầu"
   },
   "home": {
-    "title": "Chào mừng bạn",
-    "introduction": "Đây là một giới thiệu bằng tiếng Anh."
+    "deployment-title": "Triển khai mọi lúc mọi nơi. Quy mô mọi thứ.",
+    "deployment-content": "Cơ sở hạ tầng và dịch vụ siêu nhỏ của SiteWhere được triển khai trên Kubernetes, cho phép triển khai tại chỗ hoặc gần như bất kỳ nhà cung cấp đám mây nào. Các cấu hình có sẵn cao của Apache Kafka, Zookeeper và Hashicorp Consul cung cấp cơ sở hạ tầng. Mỗi microservice quy mô độc lập và tích hợp tự động."
   },
   "about": {
     "title": "Trong khoảng",

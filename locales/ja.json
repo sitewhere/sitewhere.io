@@ -8,8 +8,8 @@
     "btn-get-started": "はじめに"
   },
   "home": {
-    "title": "ようこそ",
-    "introduction": "これは英語の紹介です。"
+    "deployment-title": "どこにでもデプロイできます。すべてをスケールします。",
+    "deployment-content": "SiteWhereのインフラストラクチャとマイクロサービスはKubernetesに配置され、オンプレミスまたはほぼすべてのクラウドプロバイダに配置できます。 Apache Kafka、Zookeeper、およびHashicorp Consulの高可用性構成がインフラストラクチャを提供します。各マイクロサービスは独立して拡張し、自動的に統合します。"
   },
   "about": {
     "title": "約",

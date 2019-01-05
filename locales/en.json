@@ -8,8 +8,8 @@
     "btn-get-started": "Get Started"
   },
   "home": {
-    "title": "Welcome",
-    "introduction": "This is an introduction in English."
+    "deployment-title": "Deploy Anywhere. Scale Everything.",
+    "deployment-content": "SiteWhere infrastructure and microservices are deployed on Kubernetes, allowing for deployment on-premise or almost any cloud provider. Highly-available configurations of Apache Kafka, Zookeeper, and Hashicorp Consul provide infrastructure. Each microservice scales independently and integrates automatically."
   },
   "about": {
     "title": "About",
