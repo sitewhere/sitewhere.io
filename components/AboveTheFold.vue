@@ -4,7 +4,7 @@
     <img class="top-under-curve hidden-sm-and-down" src="~/assets/top-under-curve.svg">
     <img class="facets hidden-sm-and-down" src="/facets.jpg">
     <img class="top-overlay hidden-sm-and-down" src="~/assets/top-overlay.svg">
-    <v-toolbar app flat scroll-off-screen :scroll-threshold="0" height="70" color="transparent">
+    <v-toolbar flat height="70" color="transparent">
       <img class="top-logo" src="~/assets/sitewhere-logo.svg">
       <v-spacer/>
       <div class="hidden-sm-and-down">
@@ -216,7 +216,7 @@ export default {
   width: 220px;
   height: 50px;
   font-size: 16pt;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 .facets {
   position: absolute;
