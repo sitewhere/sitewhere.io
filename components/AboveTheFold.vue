@@ -117,7 +117,7 @@
         >{{ $t('jumbotron.btn-get-started') }}</v-btn>
       </div>
       <div class="deploy-section">
-        <h1>{{ $t('home.deployment-title') }}</h1>
+        <h2>{{ $t('home.deployment-title') }}</h2>
         <p>{{ $t('home.deployment-content') }}</p>
       </div>
     </v-content>
@@ -291,6 +291,9 @@ export default {
   margin-left: auto;
   margin-right: auto;
   color: #333;
+}
+.deploy-section h2 {
+  font-size: 30px;
 }
 .deploy-section p {
   font-size: 18px;
