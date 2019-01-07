@@ -1,7 +1,7 @@
 {
   "jumbotron": {
     "slogan": "物联网开放平台",
-    "description": "SiteWhere是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了一个基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的大多数功能。",
+    "description": "SiteWhere是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。",
     "btn-documentation": "文档",
     "btn-github": "在GitHub上查看",
     "btn-discord": "社区",

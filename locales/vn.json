@@ -1,7 +1,7 @@
 {
   "jumbotron": {
     "slogan": "Nền tảng mở cho Internet of Things",
-    "description": "SiteWhere là một nền tảng hỗ trợ ứng dụng nguồn mở sức mạnh công nghiệp cho Internet vạn vật (IoT). Nó cung cấp một cơ sở hạ tầng dựa trên microservice nhiều người thuê bao gồm hầu hết các tính năng cần thiết để xây dựng và triển khai các ứng dụng IoT.",
+    "description": "SiteWhere là một nền tảng hỗ trợ ứng dụng nguồn mở sức mạnh công nghiệp cho Internet vạn vật (IoT). Nó cung cấp một cơ sở hạ tầng dựa trên microservice nhiều người thuê bao gồm các tính năng chính cần thiết để xây dựng và triển khai các ứng dụng IoT.",
     "btn-documentation": "Tài liệu",
     "btn-github": "Xem trên GitHub",
     "btn-discord": "cộng đồng",

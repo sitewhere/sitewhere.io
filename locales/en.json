@@ -1,7 +1,7 @@
 {
   "jumbotron": {
     "slogan": "The Open Platform for the Internet of Things™",
-    "description": "SiteWhere is an industrial strength open-source application enablement platform for the Internet of Things (IoT). It provides a multi-tenant microservice-based infrastructure that includes most of the features required to build and deploy IoT applications.",
+    "description": "SiteWhere is an industrial strength open-source application enablement platform for the Internet of Things (IoT). It provides a multi-tenant microservice-based infrastructure that includes the key features required to build and deploy IoT applications.",
     "btn-documentation": "Documentation",
     "btn-github": "View on GitHub",
     "btn-discord": "Community",
