@@ -101,6 +101,7 @@
                 class="get-started-btn ma-0 mt-1 white--text"
                 @click="openDocumentation"
               >{{ $t('jumbotron.btn-get-started') }}</v-btn>
+              <gh-btns-star slug="sitewhere/sitewhere" show-count/>
             </div>
           </div>
         </v-flex>
@@ -115,7 +116,15 @@
           class="get-started-btn"
           @click="openDocumentation"
         >{{ $t('jumbotron.btn-get-started') }}</v-btn>
+        <div style="width: 100%">
+          <gh-btns-star
+            style="display: inline-block; margin-left: auto; margin-right: auto;"
+            slug="sitewhere/sitewhere"
+            show-count
+          />
+        </div>
       </div>
+      <div class="hidden-sm-and-down" style="min-height: 500px;"></div>
       <div class="deploy-section">
         <h2>{{ $t('home.deployment-title') }}</h2>
         <p>{{ $t('home.deployment-content') }}</p>
@@ -126,6 +135,7 @@
 
 <script>
 import LanguageDropdown from "./LanguageDropdown.vue";
+import "./vue-github-buttons.css";
 
 export default {
   data: () => ({
@@ -283,13 +293,15 @@ export default {
   height: 200px;
 }
 .deploy-section {
-  margin-top: 525px;
+  margin-top: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid #eee;
   text-align: left;
-  width: 60%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
   color: #333;
 }
 .deploy-section h2 {

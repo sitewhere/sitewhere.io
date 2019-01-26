@@ -34,6 +34,16 @@ module.exports = {
     "~plugins/vue-i18n.js"
   ],
 
+  modules: [
+    [
+      "vue-github-buttons/nuxt",
+      {
+        css: false,
+        useCache: false // Don't use cache
+      }
+    ]
+  ],
+
   /** Progress bar color */
   loading: { color: "#3B8070" },
 
