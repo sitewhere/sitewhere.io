@@ -1,12 +1,12 @@
 <template>
   <div class="top-content">
-    <img class="top-dark-curve hidden-sm-and-down" src="~/assets/top-dark-curve.svg">
-    <img class="top-under-curve hidden-sm-and-down" src="~/assets/top-under-curve.svg">
-    <img class="facets hidden-sm-and-down" src="/facets.jpg">
-    <img class="top-overlay hidden-sm-and-down" src="~/assets/top-overlay.svg">
+    <img class="top-dark-curve hidden-sm-and-down" src="~/assets/top-dark-curve.svg" />
+    <img class="top-under-curve hidden-sm-and-down" src="~/assets/top-under-curve.svg" />
+    <img class="facets hidden-sm-and-down" src="/facets.jpg" />
+    <img class="top-overlay hidden-sm-and-down" src="~/assets/top-overlay.svg" />
     <v-toolbar flat height="70" color="transparent">
-      <img class="top-logo" src="~/assets/sitewhere-logo.svg">
-      <v-spacer/>
+      <img class="top-logo" src="~/assets/sitewhere-logo.svg" />
+      <v-spacer />
       <div class="hidden-sm-and-down">
         <v-btn
           outline
@@ -92,7 +92,7 @@
       <v-layout row>
         <v-flex xs9>
           <div style="position: relative; margin-top: 120px;" class="hidden-sm-and-down">
-            <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg">
+            <img class="logo-symbol" src="~/assets/sitewhere-symbol.svg" />
             <div class="blurb">
               <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
               <p class="short-desc">{{ $t('jumbotron.description') }}</p>
@@ -101,14 +101,14 @@
                 class="get-started-btn ma-0 mt-1 white--text"
                 @click="openDocumentation"
               >{{ $t('jumbotron.btn-get-started') }}</v-btn>
-              <gh-btns-star slug="sitewhere/sitewhere" show-count/>
+              <gh-btns-star slug="sitewhere/sitewhere" show-count />
             </div>
           </div>
         </v-flex>
         <v-flex xs3></v-flex>
       </v-layout>
       <div class="hidden-md-and-up text-xs-center pa-4" style="margin-top: 50px;">
-        <img src="~/assets/sitewhere-symbol.svg" style="max-width: 300px;">
+        <img src="~/assets/sitewhere-symbol.svg" style="max-width: 300px;" />
         <h1 class="slogan">{{ $t('jumbotron.slogan') }}</h1>
         <p class="short-desc">{{ $t('jumbotron.description') }}</p>
         <v-btn
@@ -202,7 +202,7 @@ export default {
       if (language && "en" != language.docsLocale) {
         suffix = language.docsLocale + "/";
       }
-      window.open("https://sitewhere.io/docs/2.0.0/" + suffix, "_blank");
+      window.open("https://sitewhere.io/docs/2.1.0/" + suffix, "_blank");
     },
     openGitHub: function(event) {
       window.open("https://github.com/sitewhere/sitewhere", "_blank");
