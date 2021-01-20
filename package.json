@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "flag-icon-css": "^3.2.1",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "nuxt": "^1.0.0",
     "vue-github-buttons": "^2.1.1",
     "vue-i18n": "^8.0.0",
